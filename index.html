@@ -12,19 +12,19 @@
       <table class="ticTable">
         <tbody>
           <tr>
+            <td id="0" class="borderBottom borderRight" onclick="play(event)"></td>
             <td id="1" class="borderBottom borderRight" onclick="play(event)"></td>
-            <td id="2" class="borderBottom borderRight" onclick="play(event)"></td>
-            <td id="3" class="borderBottom" onclick="play(event)"></td>
+            <td id="2" class="borderBottom" onclick="play(event)"></td>
           </tr>
           <tr>
+            <td id="3" class="borderBottom borderRight" onclick="play(event)"></td>
             <td id="4" class="borderBottom borderRight" onclick="play(event)"></td>
-            <td id="5" class="borderBottom borderRight" onclick="play(event)"></td>
-            <td id="6" class="borderBottom" onclick="play(event)"></td>
+            <td id="5" class="borderBottom" onclick="play(event)"></td>
           </tr>
           <tr>
+            <td id="6" class="borderRight" onclick="play(event)"></td>
             <td id="7" class="borderRight" onclick="play(event)"></td>
-            <td id="8" class="borderRight" onclick="play(event)"></td>
-            <td></td>
+            <td id="8" onclick="play(event)"></td>
           </tr>
         </tbody>
       </table>
@@ -37,9 +37,9 @@
       <span class="markLabel">O</span>
       <br/>
       <div class="statusDiv borderBottom">Game Status</div>
-      <p>New Game</p>
+      <p id="status" onclick="play(event)">New Game</p>
       <!-- Game Status Messages: Game in progress | Player 1 wins | Player 2 wins -->
-      <button>Restart</button>
+      <button onclick="restart()">Restart</button>
     </div>
   </div>
   <div>
